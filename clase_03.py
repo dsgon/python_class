@@ -74,9 +74,9 @@ var_str = ''
 altura_permitida = 1.62
 edad_permitida = 14
 
-# Edad y Altura no permitida
-# p_edad = 12
-# p_altura = 1.50
+#Edad y Altura no permitida
+p_edad = 12
+p_altura = 1.50
 
 # Edad no permitida y Altura permitida
 # p_edad = 12
@@ -86,9 +86,9 @@ edad_permitida = 14
 # p_edad = 18
 # p_altura = 1.50
 
-# Edad y Altura permitida
-p_edad = 16
-p_altura = 1.75
+# # Edad y Altura permitida
+# p_edad = 16
+# p_altura = 1.75
 
 edad_persona = p_edad
 altura_persona = p_altura
