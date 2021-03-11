@@ -44,18 +44,14 @@ numeros.append(numero)
 count = 0
 
 while count < len(numeros) and numero <= 5 :
-    print('Iteracion {} del while'.format(count+1))
     if numero == numeros[count]:
         numeros.pop(count)
         print('El numero se encontraba en la lista y fue eliminado')
         break
     count+=1
 
-#if len(numeros) == 6:
-#    numeros.pop(0)
-#    print('El numero no estaba en la lista, por lo que se elimina el primer registro')
 
-if count == 0:
+if len(numeros)==6:
     numeros.pop(0)
     print('El numero no estaba en la lista, por lo que se elimina el primer registro')
 
