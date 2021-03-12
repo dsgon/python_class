@@ -41,18 +41,18 @@ numero = random.randint(1,10)
 print('el numero random es: {}'.format(numero))
 
 numeros.append(numero)
-count = 0
 
-while count < len(numeros) and numero <= 5 :
-    if numero == numeros[count]:
-        numeros.pop(count)
+indice = 0
+     
+while indice < len(numeros) and numero <= 5 :
+    if numero == numeros[indice]:
+        numeros.pop(indice)
         print('El numero se encontraba en la lista y fue eliminado')
         break
-    count+=1
-
+    indice+=1
 
 if len(numeros)==6:
-    numeros.pop(0)
+    numeros.pop(indice)
     print('El numero no estaba en la lista, por lo que se elimina el primer registro')
 
 print('el nuevo tamaño de la lista es: {}'.format(len(numeros)))
