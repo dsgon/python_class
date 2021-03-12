@@ -45,23 +45,44 @@ import random
 #     print('No hay numeros repetidos')
 
 
-#Ejercicio 2 - Listas - Forma C
-lista = [] 
-for i in range(1,10):
-    lista.append(random.randint(1,9))
+# #Ejercicio 2 - Listas - Forma C
+# lista = [] 
+# for i in range(1,10):
+#     lista.append(random.randint(1,9))
 
-#lista = [1,2,3,4,5,6,7,8,9] 
-print('Mi lista es {} '.format(lista))
+# #lista = [1,2,3,4,5,6,7,8,9] 
+# print('Mi lista es {} '.format(lista))
            
-repetido = False 
-countador = 0
-while countador < len(lista):
-    if lista.count(lista[countador]) > 1:
-         repetido =  True
-         print("El numero repetido es: {}".format(lista[countador]))
-         break
-    countador += 1
+# repetido = False 
+# countador = 0
+# while countador < len(lista):
+#     if lista.count(lista[countador]) > 1:
+#          repetido =  True
+#          print("El numero repetido es: {}".format(lista[countador]))
+#          break
+#     countador += 1
 
 
-if not repetido:
-    print("No existen números repetidos")
+# if not repetido:
+#     print("No existen números repetidos")
+
+# Ejercicio 3 - Pocker Planning
+pocker_planning = [0,0.5,1,2,3,5,8,13,20,40,100]
+pares = 0
+divisibles = 0
+suma = 0
+indice = 0
+
+for number in pocker_planning:
+    if number % 2 == 0:
+        pares+=1
+
+    if indice > 1 and number % pocker_planning[indice-1] == 0:
+        divisibles+=1
+
+    suma+=number
+    indice+=1
+
+print('Pares: {}'.format(pares)) 
+print('Divisibles: {}'.format(divisibles))
+print('Sumatoria: {}'.format(suma))
