@@ -61,10 +61,3 @@ while opcion != 0:
     opcion = int(input('''Ingrese una opcion (1 para crear un usuario, 2 para exportar usuarios, 3 para buscar un usuario
 4 para crear una tarea, 5 para ..., 0 para salir)\n'''))
 
-for tarea in tareas:
-    print(tarea.get_titulo())
-    print(tarea.get_descripcion())
-    print(tarea.get_estado())
-    print(tarea.get_prioridad())
-    print(tarea.get_usuario().get_nombre())
-    print(tarea.get_usuario().get_email())
